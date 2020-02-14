@@ -1,0 +1,59 @@
+body {
+    background: #2980B9;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.jumbotron {
+    margin-top: 1rem;
+    background: #D3CCE3;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E9E4F0, #D3CCE3);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.img-thumbnail img {
+    width: 100%;
+}
+
+.img-thumbnail {
+    padding: 0%;
+    background: #fbeecc;
+}
+
+.img-thumbnail .caption {
+    padding: 10px;
+}
+
+#imag {
+    height: 50%;
+}
+
+.deleteform {
+    display: inline;
+}
+
+#col {
+    margin-bottom: 1rem;
+}
+
+.list-group {
+    margin-top: 1rem;
+}
+
+.list-group-item.a {
+    background: #abbaab;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffffff, #abbaab);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffffff, #abbaab);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
