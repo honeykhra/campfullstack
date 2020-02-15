@@ -20,8 +20,7 @@ var commentRoutes = require("./routes/comments"),
 //   useNewUrlParser: true
 // });
 mongoose.connect(
-  "mongodb+srv://honey:divu12345@cluster0-ujnag.gcp.mongodb.net/test?retryWrites=true&w=majority",
-  {
+  "mongodb+srv://honey:divu12345@cluster0-ujnag.gcp.mongodb.net/test?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useCreateIndex: true
   }
@@ -69,7 +68,7 @@ passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
 //Local things that can be used anywhere to access data
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
   res.locals.currentUser = req.user;
   res.locals.error = req.flash("error");
   res.locals.success = req.flash("success");
@@ -80,6 +79,6 @@ app.use(indexRoutes);
 app.use("/campgrounds", campgroundRoutes);
 app.use("/campgrounds/:id/comments", commentRoutes);
 
-app.listen(3000, function() {
+app.listen(process.env.PORT || 3000, function () {
   console.log("The YelpCamp Server has started");
 });
