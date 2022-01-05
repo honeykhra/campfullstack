@@ -1,9 +1,14 @@
 <%- include("./partials/header") %>
-<h1>Sign up</h1>
+<link rel="stylesheet" href="/stylesheets/login.css" />
+<main>
+  <div class="quote-container">
+    <h1>Sign up</h1>
 
-<form action="/register" method="POST">
-    <input type="text" name="username" placeholder="username">
-    <input type="password" name="password" placeholder="password">
-    <button>Sign up</button>
-</form>
+    <form action="/register" method="POST">
+      <input type="text" name="username" placeholder="username" />
+      <input type="password" name="password" placeholder="password" />
+      <button class="signbtn">Sign up</button>
+    </form>
+  </div>
+</main>
 <%- include("./partials/footer") %>

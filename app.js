@@ -17,19 +17,25 @@ var commentRoutes = require("./routes/comments"),
 
 //seedDB();//Seed the database with campgrounds and comments
 // mongoose.connect("mongodb://localhost/Yelp_camp_v12", {
-//   useNewUrlParser: true
+//   useNewUrlParser: true,
+//   useCreateIndex: true,
+//   useUnifiedTopology: true,
+//   useFindAndModify: false,
 // });
 mongoose.connect(
-  "mongodb+srv://honey:divu12345@cluster0-ujnag.gcp.mongodb.net/test?retryWrites=true&w=majority", {
+  "mongodb+srv://honey:divu12345@cluster0-ujnag.gcp.mongodb.net/test?retryWrites=true&w=majority",
+  {
     useNewUrlParser: true,
-    useCreateIndex: true
+    useCreateIndex: true,
+    useUnifiedTopology: true,
+    useFindAndModify: false,
   }
 );
 //mongodb+srv://honey:divu12345@cluster0-ujnag.gcp.mongodb.net/test?retryWrites=true&w=majority
 app.set("view engine", "ejs");
 app.use(
   bodyparser.urlencoded({
-    extended: true
+    extended: true,
   })
 );
 app.use(express.static(__dirname + "/public"));
@@ -58,7 +64,7 @@ app.use(
   require("express-session")({
     secret: "Reetu is sweet",
     resave: false,
-    saveUninitialized: false
+    saveUninitialized: false,
   })
 );
 app.use(passport.initialize());

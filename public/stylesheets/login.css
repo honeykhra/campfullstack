@@ -1,0 +1,47 @@
+main {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quote-container {
+  width: auto;
+  min-width: 50%;
+  max-width: 900px;
+  padding: 20px 30px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 5%;
+}
+input,
+#input {
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  margin-top: 20px;
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+}
+.loginbtn {
+  background: #003049;
+  color: #eae2b7;
+  border-color: #003049;
+}
+.signbtn {
+  background: #003049;
+  color: #eae2b7;
+  border-color: #003049;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  margin-top: 20px;
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+}

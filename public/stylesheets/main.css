@@ -1,59 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 body {
-    background: #2980B9;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  background-color: #dfdbe5;
+  background: #eae2b7;
+  font-family: "Roboto", sans-serif;
+  /* font-family: "Sansita Swashed", cursive; */
 }
 
 .jumbotron {
-    margin-top: 1rem;
-    background: #D3CCE3;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #E9E4F0, #D3CCE3);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-}
-
-.img-thumbnail img {
-    width: 100%;
+  margin-top: 1rem;
+  background: #e5e9eb;
+  color: #003049;
+  border-radius: 5px;
+  box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .img-thumbnail {
-    padding: 0%;
-    background: #fbeecc;
+  padding: 0%;
+  background: #e5e9eb;
+  color: #003049;
+}
+
+.img-thumbnail img {
+  width: 100%;
 }
 
 .img-thumbnail .caption {
-    padding: 10px;
+  padding: 10px;
 }
 
 #imag {
-    height: 50%;
+  height: 50%;
 }
 
 .deleteform {
-    display: inline;
+  display: inline;
 }
 
 #col {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .list-group {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 .list-group-item.a {
-    background: #abbaab;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #ffffff, #abbaab);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #ffffff, #abbaab);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: gainsboro;
+}
+#dark {
+  background: #003049;
+  color: #eae2b7;
+  border-color: #003049;
+}
 
+.alert {
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.2);
 }

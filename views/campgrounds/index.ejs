@@ -6,14 +6,14 @@
         <!-- If no user is logged in -->
         <% if(!currentUser){ %>
         <h2>
-            These are our handpicked CAMPGROUNDS from India
+            These are our handpicked Campgrounds from India
         </h2>
         <% }else{ %>
         <h2>
-            <em> These are our handpicked CAMPGROUNDS from India
+            <em> These are our handpicked Campgrounds from India
             </em>
         </h2>
-        <a class="btn btn-primary btn-lg" href="/campgrounds/new" role="button">Add a new Campground</a>
+        <a class="btn btn-primary btn-lg" id="dark" href="/campgrounds/new" role="button">Add a new Campground</a>
         <% } %>
     </div>
 
@@ -28,7 +28,7 @@
                         <h4><%= campground.name %></h4>
                     </p>
                     <p>
-                        <a href="/campgrounds/<%= campground._id %>" class="btn btn-primary">More Info</a>
+                        <a href="/campgrounds/<%= campground._id %>" class="btn btn-primary" id="dark">More Info</a>
                     </p>
                 </div>
             </div>
